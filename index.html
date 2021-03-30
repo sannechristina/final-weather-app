@@ -9,6 +9,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -21,23 +22,22 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
-          <h1>'s-Hertogenbosch</h1>
+          <h1 id="city"></h1>
           <ul>
             <li>Dinsdag 11:00</li>
-            <li>Clear</li>
+            <li id="description"></li>
           </ul>
           <div class="row">
             <div class="col-6">
               <img src="src/PNG/gradient-1.png" />
-              <span class="degrees">12 </span>
+              <span class="degrees" id="temperature"></span>
               <span class="units">C° | F°</span>
             </div>
 
             <div class="col-6">
               <ul>
-                <li>Precipitaiton: 0%</li>
-                <li>Humidity: 73%</li>
-                <li>Wind: 2km/h</li>
+                <li>Humidity: <span id="humidity"></span> %</li>
+                <li>Wind: <span id="wind"></span> Km/H</li>
               </ul>
             </div>
           </div>
