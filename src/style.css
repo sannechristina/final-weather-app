@@ -34,3 +34,13 @@ img {
   position: relative;
   top: -12px;
 }
+
+.active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+
+.active:hover {
+  text-decoration: none;
+  color: rgb(33, 33, 33);
+}
