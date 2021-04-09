@@ -17,12 +17,14 @@
       rel="stylesheet"
     />
     <title>Sanne Christina</title>
+    <link rel="icon" href="src/PNG/gradient-1.png">
   </head>
   <body>
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
           <h1 id="city"></h1>
+          <div class="row"><div class="col-9">
           <form id="search-form">
             <input
               type="search"
@@ -30,9 +32,13 @@
               class="form-control"
               id="city-input"
               autocomplete="off"
-            />
-            <input type="submit" value="Search" />
+            /></div>
+            <div class="col">
+            <input type="submit" value="Search" class="search-button" />
+            </div></div>
           </form>
+
+                <!-- date -->
           <ul>
             <li id="date"></li>
             <li id="description"></li>
@@ -47,6 +53,8 @@
               >
             </div>
 
+            <!-- info -->
+
             <div class="col-6">
               <ul>
                 <li>Humidity: <span id="humidity"></span> %</li>
@@ -54,7 +62,19 @@
               </ul>
             </div>
           </div>
+
+<!-- forcast -->
+<div class="weather-forecast">
+  <div class="row">
+
+    <div class="col-2">
+      <div class="next-day-forcast" id="next-day">Satuday</div>
+      <img src="src/PNG/gradient-1.png" id="" alt="" />
+    <div><span class="forecast-max">9 </span>|<span class="forecast-min"> 47</span></div>
+  </div></div>
+</div>
         </div>
+<!-- open source-->
         <small>
           <a href="https://github.com/sannechristina/final-weather-app"
             >Open-source code</a
