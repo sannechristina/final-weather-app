@@ -22,6 +22,27 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Sat", "Sun", "Mon", "Tue", "Wed", "Thu"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+    <div class="col-2">
+      <div class="weather-forecast-date">${day}</div>
+      <img src="" id="icon" alt="" />
+    <div><span class="forecast-max"> 9 </span>|
+    <span class="forecast-min"> 47 </span>
+    </div>
+  </div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function displayTemperature(response) {
   console.log(response.data.main);
   let temperatureElement = document.querySelector("#temperature");
@@ -78,6 +99,7 @@ function displayCelsius(event) {
 }
 
 search("Den Bosch");
+displayForecast();
 
 let celsiusTemperature = null;
 
