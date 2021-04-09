@@ -1,17 +1,18 @@
 .weather-app-wrapper {
-  max-width: 600px;
+  max-width: 780px;
   margin: 30px auto;
 }
 .weather-app {
   font-family: "Raleway", sans-serif;
-  border: 1px solid #f0eeec;
+  border: 1px solid #ffd29e;
   border-radius: 4px;
-  padding: 0px;
+  padding: 20px;
 }
 
 h1 {
   color: #ffd29e;
   line-height: 28px;
+  padding: 20px 0;
 }
 
 ul {
@@ -21,6 +22,10 @@ ul {
 
 li {
   list-style: none;
+}
+
+.date {
+  padding-top: 20px;
 }
 
 img {
@@ -49,10 +54,15 @@ img {
   color: #ffd29e;
   border: 1px solid #ffd29e;
   background-color: transparent;
+  padding: 6px 12px;
+  border-radius: 0.25rem;
+  transition: all 1s ease-in-out;
 }
 
 .search-button:hover {
-  border-radius: 10px;
+  color: #ffffff;
+  background-color: #ffd29e;
+  transition: all 1s ease-in-out;
 }
 
 .weather-forecast {
@@ -62,4 +72,12 @@ img {
 
 .weather-forecast-date {
   color: #ffd29e;
+}
+
+.forecast-min {
+  color: #c8c8c8;
+}
+
+.form-control {
+  border: 1px solid #ffd29e;
 }
